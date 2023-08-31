@@ -1,0 +1,445 @@
+@import '../styles/colors';
+
+.mat-table,
+.mat-mdc-table {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+table {
+  width: 100%;
+}
+
+.save-list-view,
+.order-list-view,
+.sales-analytics,
+.finance-table-view,
+.sku-table-view,
+.sku-table-view-categories,
+.sku-table-view-options,
+.sku-table-view-items,
+.sku-bulk-discount-table {
+  .header-cell-center {
+    .mat-sort-header-container {
+      justify-content: center;
+    }
+  }
+
+  th.mat-header-cell {
+    text-align: center !important;
+  }
+
+  .mat-button-focus-overlay {
+    background-color: transparent !important;
+  }
+
+  .mat-header-cell {
+    background-color: $black40;
+    color: $black80;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  .mat-cell,
+  .mat-footer-cell {
+    color: $black80;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  th.mat-header-cell,
+  td.mat-cell,
+  td.mat-footer-cell {
+    border-bottom-width: 0px !important;
+  }
+
+  .mat-row:nth-child(even) {
+    background-color: $black5;
+  }
+
+  .mat-row:nth-child(odd) {
+    background-color: $white;
+  }
+
+  td.mat-cell {
+    /* row border */
+    border-right: 1px solid $black20;
+  }
+
+  td.mat-cell:first-child {
+    /* row border */
+    border-left: 1px solid $black20;
+  }
+
+  .mat-row:hover {
+    background-color: $black20;
+    cursor: pointer;
+  }
+
+  .status {
+    text-align: center !important;
+  }
+
+  .mat-menu-panel {
+    width: 162px;
+  }
+
+  .mat-menu-item {
+    text-align: left !important;
+  }
+
+  th.mat-header-cell:last-of-type,
+  td.mat-cell:last-of-type,
+  td.mat-footer-cell:last-of-type {
+    padding-right: 0px !important;
+  }
+
+  th.mat-header-cell:first-of-type,
+  td.mat-cell:first-of-type,
+  td.mat-footer-cell:first-of-type {
+    padding-left: 0px !important;
+  }
+
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: $black;
+  }
+
+  .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: $black;
+  }
+
+  .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: $black30 !important;
+  }
+}
+
+.finance-table-view {
+
+  th.mat-header-cell:last-of-type,
+  td.mat-cell:last-of-type,
+  td.mat-footer-cell:last-of-type {
+    padding-right: 24px !important;
+  }
+}
+
+.order-list-view {
+  .status-container {
+    background-color: $black35;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 108px;
+    padding-bottom: 4px;
+    padding-top: 6px;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .status-container-label{
+    background-color: #FFD7D7;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100px;
+    padding-bottom: 4px;
+    padding-top: 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    color:#152934;
+  }
+
+  .mat-column-value {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 14% !important;
+    width: 14% !important;
+  }
+
+  .mat-column-view {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 15% !important;
+    width: 15% !important;
+  }
+
+  .block {
+    width: 20px;
+    border-radius: 4px 0px 0px 4px;
+
+    &-prep {
+      background-color: $orange40;
+    }
+
+    &-completed {
+      background-color: $green70;
+    }
+
+    &-ready {
+      background-color: $yellow70;
+    }
+
+    &-canceled {
+      background-color: $black55;
+    }
+
+    &-rejected {
+      background-color: $red70;
+    }
+
+    &-picked {
+      background-color: $orange30;
+    }
+
+    &-new {
+      background-color: $orange40;
+    }
+  }
+}
+
+.sku-table-view {
+  td.mat-cell {
+    border-right: none;
+  }
+
+  td.mat-cell:first-child {
+    border-left: none;
+  }
+
+  td.mat-cell {
+    padding: 16px 0;
+    border-bottom: 1px solid $black20;
+    border-top: 1px solid $black20;
+  }
+
+  th.mat-header-cell {
+    text-align: left !important;
+  }
+}
+
+.sku-table-view-categories {
+  .drag-handler-cell {
+    border-right: none !important;
+    border-left: none !important;
+  }
+
+  th.mat-header-cell {
+    text-align: left !important;
+    padding-left: 10px;
+  }
+
+  th.mat-header-cell:nth-child(4),
+  th.mat-header-cell:nth-child(5) {
+    text-align: center !important;
+  }
+
+  .mat-select {
+    font-family: 'Noto Sans', sans-serif !important;
+  }
+
+  td.mat-cell:first-of-type {
+    padding-left: 24px !important;
+  }
+}
+
+.sku-table-view-items {
+  th.mat-header-cell {
+    text-align: left !important;
+    padding-left: 10px;
+  }
+
+  th.mat-header-cell:nth-child(3) {
+    text-align: center !important;
+  }
+
+  th.mat-header-cell:first-of-type,
+  td.mat-footer-cell:first-of-type {
+    padding-left: 10px !important;
+  }
+
+  td.mat-cell:first-of-type {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.price-update {
+
+  th.mat-header-cell:first-of-type,
+  td.mat-cell:first-of-type,
+  td.mat-footer-cell:first-of-type {
+    padding-left: 10px !important;
+  }
+}
+
+.sku-table-view-options {
+  th.mat-header-cell {
+    text-align: left !important;
+    padding-left: 10px;
+  }
+
+  th.mat-header-cell:first-of-type,
+  td.mat-cell:first-of-type,
+  td.mat-footer-cell:first-of-type {
+    padding-left: 10px !important;
+  }
+}
+
+.sku-bulk-discount-table {
+  @media only screen and (max-width: 1600px) {
+    .right-text {
+      text-align: right;
+      padding-right: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 1920px) {
+    .right-text {
+      text-align: right;
+      padding-right: 130px;
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+    .right-text {
+      text-align: right;
+      padding-right: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .right-text {
+      text-align: right;
+      padding-right: 70px;
+    }
+  }
+
+  .discount-value {
+    text-align: right;
+  }
+
+  .left-text {
+    text-align: left;
+  }
+
+  td.mat-cell {
+    border-right: none;
+  }
+
+  td.mat-cell:first-child {
+    border-left: none;
+  }
+
+  .mat-row:hover {
+    cursor: default;
+  }
+
+  table.mat-table {
+    border-spacing: 0 6px;
+  }
+
+  th.mat-header-cell {
+    text-align: left !important;
+  }
+
+  .mat-row:nth-child(even) {
+    background-color: $white;
+  }
+
+  .mat-row:nth-child(odd) {
+    background-color: $white;
+  }
+}
+
+
+.sales-analytics {
+  .mat-mdc-table .mat-mdc-header-cell:nth-child(1) {
+    background-color: #F57E17;
+    color: $white;
+    z-index: 1 !important;
+  }
+
+  .mat-mdc-table .mat-mdc-header-cell:nth-child(2) {
+    background-color: #7384C8;
+    color: $white;
+    z-index: 1 !important;
+  }
+
+  td.mat-mdc-cell {
+    border-bottom: 0.5px solid $black30;
+    border-top: 0.5px solid $black30;
+  }
+
+  td.mat-mdc-cell:nth-child(2) {
+    text-align: end;
+    padding-right: 24px
+  }
+
+  .mat-mdc-footer-cell:nth-child(2) {
+    border-bottom: 0.5px solid $black30;
+    text-align: end;
+    padding-right: 24px;
+  }
+
+  .mat-mdc-footer-cell {
+    background-color: $black5;
+    font-weight: 600;
+  }
+  .mat-mdc-table-sticky{
+    z-index: 1 !important;
+  }
+
+}
+
+.item-analytics {
+  .mat-mdc-table .mat-mdc-header-cell:nth-child(3) {
+    background-color: #F57E17;
+    color: $white;
+  }
+
+  .mat-mdc-table .mat-mdc-header-cell:nth-child(4) {
+    background-color: #7384C8;
+    color: $white;
+  }
+}
+
+.analytics-table-item {
+  .mat-mdc-table .mat-mdc-header-cell {
+    background-color: $black40;
+    color: $black80;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  th.mat-mdc-header-cell,
+  td.mat-mdc-cell,
+  td.mat-mdc-footer-cell {
+    border-bottom: none !important;
+  }
+
+  th.mat-mdc-header-cell {
+    text-align: center;
+  }
+
+  .mat-mdc-row:nth-child(even) {
+    background-color: $black5;
+  }
+
+  .mat-mdc-row:nth-child(odd) {
+    background-color: $white;
+  }
+
+  td.mat-mdc-cell {
+    border-right: 1px solid $black20;
+    text-align: center;
+  }
+
+  td.mat-mdc-cell:first-child {
+    border-left: 1px solid $black20;
+  }
+
+  .mat-mdc-row:hover {
+    background-color: $black20;
+    cursor: pointer;
+  }
+}

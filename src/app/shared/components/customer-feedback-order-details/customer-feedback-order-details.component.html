@@ -1,0 +1,146 @@
+<div class="feedback-container-right-sheet p-x-24">
+  <div class="tab-container flex-row">
+    <div>
+      <button mat-flat-button class="margin-between" (click)="isFeedbackDetails=true" *ngIf="orderInfo.showFeedbackDetails"
+              [ngClass]="{'button-active':isFeedbackDetails ,'button-inactive':!isFeedbackDetails}">
+        <img class="feedback-mat-btn btn-mat-icon" [src]="isFeedbackDetails?CONST.ICONS.ICON_USERW:CONST.ICONS.ICON_USER">
+        Feedback
+      </button>
+      <button mat-flat-button class="" (click)="isFeedbackDetails=false" *ngIf="orderInfo.showOrderDetails"
+              [ngClass]="{'button-active':!isFeedbackDetails,'button-inactive':isFeedbackDetails}">
+        <mat-icon class="order-details-mat-btn btn-mat-icon"> list_alt</mat-icon>
+        <span>Order Details</span>
+      </button>
+    </div>
+    <div (click)="!isLoading?modalService.close():null">
+      <button class="btn-round" mat-fab>
+        <mat-icon class="clear-icon">clear</mat-icon>
+      </button>
+    </div>
+  </div>
+  <hr class="m-t-24">
+  <div class="flex-row m-t-24 user">
+    <div class="flex-row">
+      <img class="m-r-16"
+           [src]="feedback.merchant_rating===merchantRating.POSITIVE?CONST.ICONS.ICON_GTHUMBSUP:CONST.ICONS.ICON_RTHUMBSDOWN">
+      <div class="m-t-6">
+        <div class="l1">{{feedback.passenger_firstname}}</div>
+        <div class="mini1">{{feedback.passenger_order_count === 1 ? 'New Customer' : '' +
+          helper.suffixNumber(+feedback.passenger_order_count) + ' Order'}}</div>
+      </div>
+    </div>
+    <div class="bold-text" *ngIf="!isFeedbackDetails || orderInfo.showOrderDetails">{{feedback.job_id}}</div>
+  </div>
+
+  <div class="feedback-container" *ngIf="isFeedbackDetails && isDataLoaded">
+    <div>
+      <div class="comment-block m-t-16 p-r-12 p-l-12 p-b-12 p-t-4"
+           *ngIf="feedback.rating_tags.length!==0 || feedback.passenger_comment!==''">
+        <div class="mini1">{{feedback.passenger_comment}}</div>
+        <div class="comments">
+          <div class="comment m-t-8 m-r-8" *ngFor="let comment of feedback.rating_tags">
+            <div class="micro1 p-r-4 p-l-4">{{comment}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="comment-block m-t-16 p-x-12" *ngFor="let items of feedback.order_details">
+        <div class="flex-row">
+          <img class="m-r-12"
+               [src]="items.rating===merchantRating.POSITIVE?CONST.ICONS.ICON_LIKE:CONST.ICONS.ICON_UNLIKE">
+          <div class="mini2 secondary-text-color">
+            {{items.name}}
+          </div>
+        </div>
+        <div class="mini1">{{items.comment}}</div>
+      </div>
+      <div class="micro1 m-t-8 secondary-text-color">Feedback submitted
+        on {{feedback.job_rated_timestamp }}</div>
+      <div class="merchant-reply" *ngIf="feedback.merchant_reply">
+        <div class="comment-block reply-comment m-t-16 p-x-12">
+          <div class="flex-row ">
+            <div class="mini2 secondary-text-color">
+              {{feedback.merchant_reply}}
+            </div>
+          </div>
+        </div>
+        <div class="micro1 m-t-8 secondary-text-color"> Replied
+          on {{feedback.merchant_replied_timestamp}}</div>
+      </div>
+      <div class="m-t-112" *ngIf="feedback.feedback_promotion">
+        <div class="awarded-promo-container mini2 p-x-12">
+          Promo Awarded: {{feedback.feedback_promotion}}
+        </div>
+      </div>
+    </div>
+    <div class="reply-message" *ngIf=" feedback.days_to_reply>0 ">
+      <div class="promo-btn-div">
+        <button mat-flat-button class="promo-btn margin-between"
+                *ngIf="!isDiscountSelected" [disabled]="isDiscountGiven">
+<!--          <img class="m-r-4 promo" src="{{CONST.ICONS.ICON_PROMO}}">-->
+          Promo
+        </button>
+        <div class="send-promo-btn margin-between" *ngIf="isDiscountSelected">
+          <img class="m-r-4 promo m-l-8 m-t-10" src="{{CONST.ICONS.ICON_TICK}}">
+          Promo
+        </div>
+      </div>
+
+      <div class="reply-text-div">
+        <div class="flex-row reply-text p-l-12">
+          <div class="promo-container m-r-4 p-l-6 m-t-4 micro1 flex-row" *ngIf="isDiscountSelected">
+            <span class="m-t-2"> {{promotionName}}</span>
+            <img class="clear" src="{{CONST.ICONS.ICON_CLEAR}}" (click)="onRemoveDiscount()">
+          </div>
+<!--          <div class="reply-text-area-container" [ngClass]="{'reply-text-shorter':isDiscountSelected}">-->
+<!--            <textarea class="reply-text-area" [(ngModel)]="merchantReply" (keydown)="adjustHeight($event)"></textarea>-->
+<!--          </div>-->
+        </div>
+      </div>
+<!--      <div class="m-l-24 send-div" (click)="!merchantReply || isLoading ?null:sendEmail()">-->
+<!--        <img class="send"-->
+<!--             [src]="!merchantReply || isLoading?CONST.ICONS.ICON_SEND:CONST.ICONS.ICON_SENDDARK"-->
+<!--             [ngClass]="{'disabled':!merchantReply || isLoading}">-->
+<!--      </div>-->
+    </div>
+  </div>
+  <div *ngIf="!isFeedbackDetails">
+    <div *ngFor="let items of feedback.order_details">
+      <div class=" main-text-color m-t-20">
+        <div class="grid">
+          <div class="s2"> {{items.name}}</div>
+          <div class="s1"> {{items.qty}}x</div>
+          <div class="s1 item-price">LKR {{items.item_total }}</div>
+        </div>
+      </div>
+      <div class="m-t-8 mini1" *ngFor="let option of items.order_options">
+        <div>{{option.name}}-
+          <div class="grid m-t-8" *ngFor="let value of option.values">
+            <div> {{value.value}}</div>
+            <div class="s1"> {{value.qty}}x</div>
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="m-t-8 mini1 order-desc">{{items.sp_ins}}</div>
+    </div>
+    <hr class="m-t-20 m-l-10 m-r-10">
+    <div class=" m-t-16 main-text-color">
+      <div class="flex" *ngIf="feedback.subtotal_order_amount">
+        <div class="s1">Subtotal (LKR)</div>
+        <div class="s1">{{feedback.subtotal_order_amount}}</div>
+      </div>
+      <div>
+        <div class="flex m-t-16" *ngIf="feedback.merchant_discount">
+          <div class="s1">Promotion (LKR)</div>
+          <div class="s1">-{{feedback.merchant_discount}}</div>
+        </div>
+      </div>
+      <div class="flex m-t-16" *ngIf="feedback.total_order_amount">
+        <div class="s1 bold-text">Total (LKR)</div>
+        <div class="s1 bold-text">{{feedback.total_order_amount}}</div>
+      </div>
+    </div>
+    <hr class="m-t-20 m-l-10 m-r-10">
+  </div>
+</div>

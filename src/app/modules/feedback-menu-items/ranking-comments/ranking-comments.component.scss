@@ -1,0 +1,60 @@
+@import 'src/theme/styles/colors';
+
+
+.ranking-con, .comment-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  height: 48px;
+  width: 48px;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.ranking-comments {
+  background-color: $white;
+  height: 100%;
+  padding: 24px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+ background: $black50;
+ border-radius: 8px;
+}
+.btn-round {
+  height: 48px;
+  width: 48px;
+  background-color: $black15;
+  margin-top: -6px;
+}
+
+.mat-icon {
+  margin-top: -6px;
+}
+
+.clear {
+  justify-content: end;
+}
+
+hr {
+  background-color: $black15;
+  border: none;
+  height: 1px;
+}
+
+.comment-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.comments {
+  height: 560px;
+  overflow: scroll;
+  position: relative;
+  max-height: inherit
+}

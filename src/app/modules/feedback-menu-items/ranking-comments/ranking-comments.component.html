@@ -1,0 +1,46 @@
+<div class="ranking-comments">
+  <div class="ranking-con">
+    <div class="flex-row clear">
+      <button class="btn-round" mat-fab (click)="modalService.close()">
+        <mat-icon class="btn-mat-icon">clear</mat-icon>
+      </button>
+    </div>
+    <div class="flex-row m-t-24">
+      <div class="m-r-12">
+        <img class="m-r-10 item-image "
+          [src]=" ranking.image_url? ranking.image_url:CONST.ICONS.ICON_MENUITEM">
+      </div>
+      <div class="">
+        <div class="h4">{{ranking.item_name}}</div>
+        <div class="flex-row">
+          <div class="micro1 m-r-24">{{ranking.rating_percentage}}%</div>
+          <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLLIKE}}">
+          <div class="micro1 m-r-24">{{ranking.like_count}}</div>
+          <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLUNLIKE}}">
+          <div class="micro1 m-r-24">{{ranking.like_count}}</div>
+          <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLCOMMENT}}">
+          <div class="micro1">{{ranking.comments_count}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="hr m-t-24">
+      <hr>
+    </div>
+    <div infiniteScroll [infiniteScrollThrottle]="50" [scrollWindow]="false" class="comments"
+      (scrolled)="onScrollDown()" [immediateCheck]="true">
+      <div class="flex-column p-b-6 p-t-6" *ngFor="let comment of allComments">
+        <div class="flex-row">
+          <img class="m-r-24 comment-icon"
+            [src]="comment.rating===itemRating.NEGATIVE?CONST.ICONS.ICON_SMALLTHUMBSDOWN:CONST.ICONS.ICON_SMALLTHUMBSUP">
+          <div class="flex-column">
+            <div class="micro1 m-t-4">Feedback submitted on {{comment.rated_timestamp | date : dateFormat}}</div>
+            <div class="mini1 m-t-8">{{comment.comment}}</div>
+          </div>
+        </div>
+        <div class="hr">
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

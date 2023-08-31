@@ -1,0 +1,29 @@
+<div class="modal-container">
+  <div class="flex-row title">
+    <div class="flex-row" [ngClass]="data.panelClass ? data.panelClass: ''">
+      <div [ngSwitch]="data? data.type : ''">
+        <mat-icon *ngSwitchCase="INFO">info</mat-icon>
+        <mat-icon *ngSwitchCase="SUCCESS">info</mat-icon>
+        <!--      <mat-icon *ngSwitchCase="INFO">check_circle</mat-icon>-->
+        <mat-icon *ngSwitchCase="WARNING">warning</mat-icon>
+        <mat-icon *ngSwitchCase="ERROR">error</mat-icon>
+      </div>
+      <div class="h4 m-l-8 ">{{data? data.title : ''}}</div>
+    </div>
+    <div>
+      <button class="clear" *ngIf="!data.hideCloseButton" [mat-dialog-close]="undefined">
+        <mat-icon class="clear">clear</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="modal-text m-t-10">{{data ? data.message : ''}}</div>
+  <div class="modal-buttons m-t-18">
+    <button *ngIf="data.secondaryBtn" mat-flat-button class="btn-primary s3 main-text-color margin-between"
+      (click)="onSecondaryBtnClick()">
+      {{data? data.secondaryBtn : ''}}
+    </button>
+    <button mat-flat-button class="btn-secondary s3 main-text-color" (click)="onPrimaryBtnClick()">
+      {{data? data.primaryBtn : ''}}
+    </button>
+  </div>
+</div>

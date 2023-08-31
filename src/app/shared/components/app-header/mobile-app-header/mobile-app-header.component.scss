@@ -1,0 +1,37 @@
+@import 'src/theme/styles/colors';
+.rightsheet-container {
+  background-color: $white;
+  height: 100%;
+  overflow: auto;
+}
+.title{
+  align-items: center;
+}
+hr{
+  border-top: 1px solid $black20;
+}
+.non-expandable-menu .mat-expansion-panel-header.mat-expanded {
+  height: 48px;
+}
+::ng-deep .non-expandable-menu .mat-expansion-panel-body {
+  padding: 0 !important;
+}
+.mat-expansion-panel{
+  box-shadow: none;
+}
+.mat-expansion-panel-header{
+  padding: 4px;
+}
+.logo-icon{
+
+}
+@media screen and (min-width:376px) and (max-width:768px) {
+  .logo-icon{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .logo-icon{
+    width: 150px;
+  }
+}

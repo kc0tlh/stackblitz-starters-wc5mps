@@ -1,0 +1,97 @@
+$primaryColor:   #FFD530;
+$secondaryColor: #152934;
+
+$black:   #000000;
+$black90: #212121;
+$black80: #424242;
+$black70: #616161;
+$black65: #263238;
+$black60: #757575;
+$black55: #7A8E99;
+$black50: #9E9E9E;
+$black45: #CDCDCD;
+$black40: #BDBDBD;
+$black30: #E0E0E0;
+$black25: #F5F5F5;
+$black20: #EEEEEE;
+$black35: #E1E4E5;
+$black10: #E0E0E0;
+$black15: #EEEEEE;
+$black5 : #FAFAFA;
+
+$yellow90: #F57E17;
+$yellow80: #F9A824;
+$yellow70: #FBC12C;
+$yellow60: #FDD834;
+$yellow50: #FFD95A;
+$yellow20: #FBF199;
+$yellow10: #FDF7C2;
+
+$orange40: #F9A42D;
+$orange30: #F2994A;
+
+$white:    #FFFFFF;
+
+$red80:    #BD2525;
+$red75:    #F44336;
+$red70:    #DC2B17;
+$red60:    #E93C39;
+$red50:    #F8463A;
+$red40:    #F25653;
+$red30:    #E77575;
+$red20:    #FFB287;
+$red10:    #FFCED3;
+$red5:     #FFEBEE;
+
+
+$pink :    #E77575;
+
+$green80:  #10783D;
+$green70:  #00941B;
+$green60:  #239B53;
+$green50:  #2AAA5E;
+$green40:  #50B774;
+$green20:  #4caf50;
+$green30:  #70C38C;
+$green5:   #E5F4EA;
+
+
+$blue80: #183290;
+$blue70: #223C9B;
+$blue60: #3f51b5;
+$blue50: #324EB1;
+$blue40: #5368BC;
+$blue30: #7384C8;
+$blue5 : #C2C9E8;
+$blue5 : #E7E9F5;
+
+$ash : #BFBFBA;
+
+.container-color{
+  background-color: $black20;
+}
+.main-text-color{
+  color: $black80;
+}
+.secondary-text-color{
+  color: $black60;
+}
+.sub-text-color{
+  color: $black70;
+}
+.menu-color{
+  color: $black90;
+}
+.light-text-color{
+  color: $white;
+}
+
+/*
+error color of mat form feild inputs
+ */
+
+.error-input{
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: red!important;
+  }
+}

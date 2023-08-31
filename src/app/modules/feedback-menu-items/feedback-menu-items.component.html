@@ -1,0 +1,82 @@
+<div class="main-text-color main-container">
+  <div class="outer-container">
+    <div class="mob-res-font">Menu Items</div>
+    <div class="main-grid-container p-b-24">
+<!--      <div class="ranking-container m-t-40  p-l-10">-->
+<!--        <div class="flex-row-s-b m-t-16">-->
+<!--          <div class="h3 m-r-24">Items Ranking</div>-->
+<!--          <div>-->
+<!--            <img [matMenuTriggerFor]="sortMenu" class="filter-image" src="{{CONST.ICONS.ICON_FILTER}}">-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="ranking-con m-t-24">-->
+<!--          <mat-menu #sortMenu="matMenu" yPosition="below">-->
+<!--            <button mat-menu-item [ngClass]="{'selected-sorting':selectedSorting===ASCENDING_ORDER}"-->
+<!--              (click)="sortRankings(ASCENDING_ORDER)">-->
+<!--              Lowest to Highest-->
+<!--            </button>-->
+<!--            <button mat-menu-item [ngClass]="{'selected-sorting':selectedSorting===DESCENDING_ORDER}"-->
+<!--              (click)="sortRankings(DESCENDING_ORDER)">-->
+<!--              Highest to Lowest-->
+<!--            </button>-->
+<!--          </mat-menu>-->
+<!--          <div class="flex-row pointer-cursor" *ngFor="let ranking of itemsRankings" (click)="openComments(ranking)">-->
+<!--            <div class="m-r-12">-->
+<!--              <img class="m-r-10 item-image "-->
+<!--                [src]="ranking.image_url?ranking.image_url:CONST.ICONS.ICON_MENUITEM">-->
+<!--            </div>-->
+<!--            <div class="">-->
+<!--              <div class="l1 item-name">{{ranking.item_name}} </div>-->
+<!--              <div class="flex-row">-->
+<!--                <div class="micro1 m-r-24 rating-percentage">{{ranking.rating_percentage}}%</div>-->
+<!--                <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLLIKE}}">-->
+<!--                <div class="micro1 m-r-24">{{ranking.like_count}}</div>-->
+<!--                <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLUNLIKE}}">-->
+<!--                <div class="micro1 m-r-24">{{ranking.like_count}}</div>-->
+<!--                <img class="m-r-2" src="{{CONST.ICONS.ICON_SMALLCOMMENT}}">-->
+<!--                <div class="micro1">{{ranking.comments_count}}</div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="flex-row-f-e m-r-8">-->
+<!--          <mat-paginator paginator aria-label="Select page" (pageStateChanged)="onRankingPaginated($event)"-->
+<!--            [length]="totalRankingsCount" [hidePageSize]="true" [disablePersistence]="true">-->
+<!--          </mat-paginator>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="comment-container m-t-40 p-l-10">
+        <div class="title">
+          <div class="flex-row-s-b">
+            <div class="h3 m-r-24 m-t-16">All Comments</div>
+          </div>
+          <div class="comment-con m-t-24">
+            <div class="flex-row-s-b m-t-12" *ngFor="let comment of menuItemsComments">
+              <div class="flex-row">
+                <img class="m-r-24 comment-icon m-t-4"
+                  [src]="comment.rating===itemRating.NEGATIVE?CONST.ICONS.ICON_SMALLTHUMBSDOWN:CONST.ICONS.ICON_SMALLTHUMBSUP">
+                <div class="comment-desc">
+                  <div class="l1 menu-item-name">
+                    {{comment.menu_item_name}}
+                  </div>
+                  <div class="micro1">Feedback submitted on {{comment.rated_timestamp | date : dateFormat}}</div>
+                  <div class="mini1 m-t-8" *ngIf="comment.comment">{{comment.comment}}</div>
+                </div>
+              </div>
+              <div class="view-order-btn">
+                <button mat-flat-button class="btn-primary s3 main-text-color"
+                  (click)="getOrderDetails(comment.job_id)">
+                  View Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

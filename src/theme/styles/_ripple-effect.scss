@@ -1,0 +1,65 @@
+.icon-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    outline: 0;
+    z-index: 1;
+    -webkit-transition: all .40s ease-in;
+    transition: all .15s ease-in;
+    border: none;
+    background-color: #fff;
+    padding: 2px;
+  }
+  .icon-button:hover, .icon-button:focus {
+    opacity: .9;
+  }
+  @-webkit-keyframes ripple {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: .5;
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ripple {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: .3;
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+    }
+  }
+  .ripple:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: currentColor;
+    visibility: hidden;
+    z-index: 2;
+  }
+  .ripple:not(:active):before {
+    -webkit-animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+    animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition: visibility .4s step-end;
+    transition: visibility .4s step-end;
+  }
+  .ripple:active:before {
+    visibility: visible;
+  }

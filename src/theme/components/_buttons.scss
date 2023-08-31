@@ -1,0 +1,34 @@
+@import '../styles/colors';
+
+.btn{
+  box-shadow: none;
+  padding-top: 15px;
+
+  &-primary{
+    background-color: $black20;
+  }
+  &-secondary{
+    background-color: $yellow60;
+  }
+  &-light{
+    background-color: $white;
+  }
+  &-round{
+    background-color: $black20;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+  }
+  &-dark{
+    background-color: $black90;
+  }
+  &-active{
+    border-radius: 12px !important;
+    color: $white !important;
+  }
+  &-default{
+    background-color: $white;
+    color: $black80;
+    border-radius: 12px !important;
+  }
+}

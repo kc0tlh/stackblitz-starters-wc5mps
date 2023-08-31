@@ -1,0 +1,9 @@
+{
+  "SYSTEM_CONFIG": "assets/config/system.config.json",
+  "ENDPOINT_CONFIG": "assets/config/endpoint.config.json",
+  "NAVIGATION_CONFIG": "assets/config/navigation.config.json",
+  "MENU_CONFIG": "assets/config/menu.config.json",
+  "ERROR_CONFIG": "assets/config/error.config.json",
+  "ENVIRONMENT_CONFIG": "assets/config/environment.config.json",
+  "USER_CONFIG": "assets/config/user.config.json"
+}

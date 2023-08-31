@@ -1,0 +1,30 @@
+<!--<div>-->
+<!--  <div class="flex-con">-->
+<!--    <div class="snack-icon">-->
+<!--    </div>-->
+<!--    <div class="m-l-16 alert-title m-r-42">{{data?.title}}</div>-->
+<!--  </div>-->
+<!--  <div class="alert-text s1">{{data?.message}}-->
+<!--  </div>-->
+<!--&lt;!&ndash;  <div class="flex-con snack-btn">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <button mat-flat-button class="btn-default mini2 main-text-color">Button</button>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <button mat-flat-button class="btn-active mini2 main-text-color" (click)="onDismiss()">Button</button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--</div>-->
+
+<div class="flex-con">
+  <div class="snack-icon m-r-12">
+  </div>
+  <div class="content">
+    <div class="alert-title s2">{{data ? data.title : ''}}</div>
+    <div class="alert-text m-t-6 s1">{{data ? data.message : ''}}
+    </div>
+  </div>
+  <div class="clear" (click)="onDismiss()">
+    <mat-icon>clear</mat-icon>
+  </div>
+</div>
+<!--<div class="flex-con snack-btn">-->
+<!--  <button mat-flat-button class="btn-default mini2 main-text-color">Button</button>-->
+<!--  <button mat-flat-button class="btn-active mini2 main-text-color">Button</button>-->
+<!--</div>-->

@@ -1,0 +1,10 @@
+@import 'src/theme/styles/colors';
+
+/*
+error color of mat form feild inputs
+ */
+.error-input{
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: red!important;
+  }
+}

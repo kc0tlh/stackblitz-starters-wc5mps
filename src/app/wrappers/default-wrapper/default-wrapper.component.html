@@ -1,0 +1,21 @@
+<!-- Commented temporarily to fix overview scroll issue  -->
+<mat-sidenav-container class="flex-grow-1">
+  <mat-sidenav #sidenav mode="over" role="navigation" [fixedTopGap]="52">
+    <mp-mobile-app-header (closeSideMenu)="closeSideMenu()"></mp-mobile-app-header>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mp-app-header (toggle)="onToggle()"></mp-app-header>
+    <main>
+      <router-outlet></router-outlet>
+      <!-- <mp-spinner *ngIf="showSpinner"></mp-spinner> -->
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <mp-app-header></mp-app-header>
+<router-outlet></router-outlet>
+<mp-spinner *ngIf="showSpinner"></mp-spinner> -->
+
+<!--<ng-container *ngIf="link">-->
+<!--  <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(link)"></iframe>-->
+<!--</ng-container>-->

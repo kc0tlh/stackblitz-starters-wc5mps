@@ -1,0 +1,12 @@
+{
+  "mPlus_client": {
+    "LOCAL": "http://localhost:4200"
+  },
+  "cLever_tap": {
+    "LOCAL": "TEST-9R7-9W6-546Z"
+  },
+  "env": "LOCAL",
+  "reCaptcha": {
+    "site_key": "gdydgtestiygfy"
+  }
+}

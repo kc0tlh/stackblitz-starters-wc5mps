@@ -1,0 +1,11 @@
+@import '../styles/layout';
+.mat-right-sheet-container {
+    padding: 0px 0px !important;
+    overflow: hidden !important;
+   
+  }
+  @media screen and (max-width: $mobile_max_width) {
+    .mat-right-sheet-container {
+      transform: translateY(0) !important;
+    }
+  }

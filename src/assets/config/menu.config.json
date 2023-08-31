@@ -1,0 +1,27 @@
+{
+  "FINANCE": {
+    "id": "FINANCE",
+    "type": "MAIN",
+    "title": "Finance",
+    "icon": "",
+    "hide": false,
+    "disable": false,
+    "restrictKey": "navibar_finance_new",
+    "subItems": []
+  },
+  "FEEDBACK": {
+    "id": "FEEDBACK",
+    "type": "MAIN",
+    "title": "Feedback",
+    "icon": "",
+    "hide": false,
+    "disable": false,
+    "restrictKey": "navibar_feedback",
+    "clevertapEvent": "click_menu_feedback",
+    "subItems": [
+      "FEEDBACK_OVERVIEW",
+      "CUSTOMER_FEEDBACK",
+      "MENU_ITEMS"
+    ]
+  }
+}

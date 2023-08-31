@@ -1,0 +1,97 @@
+@import '../styles/colors';
+
+.flex-con{
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+.alert-title{
+  width: 246px;
+  height: 20px;
+  display:block;
+  overflow:auto;
+  height: 100%;
+}
+.alert-text{
+  width: 246px;
+  padding-bottom: 16px;
+}
+.clear{
+  cursor: pointer;
+}
+.snack-btn{
+  justify-content: flex-end;
+}
+.btn-default{
+  margin-right: 8px;
+}
+.mat-snack-bar-container{
+  color:$white;
+}
+.btn-active{
+  padding: 8px;
+}
+.error{
+  background-color: $red40;
+  .btn-active{
+    background-color:$red80 ;
+    margin-left: 8px;
+  }
+  .snack-icon {
+    &::before{
+      font-family: 'Material Icons';
+      content: "highlight_off";
+      font-size: 24px;
+    }
+  }
+}
+
+.success{
+  background-color: $green30;
+  .btn-active{
+    background-color:$green80 ;
+    margin-left: 8px;
+  }
+  .snack-icon {
+    &::before{
+      font-family: 'Material Icons';
+      content: "check_circle";
+      font-size: 24px;
+    }
+  }
+}
+
+.warning{
+  background-color: $black60;
+  .btn-active{
+    background-color:$black80;
+    margin-left: 8px;
+  }
+  .snack-icon {
+    &::before{
+      font-family: 'Material Icons';
+      content: "warning";
+      font-size: 24px;
+    }
+  }
+
+}
+
+.info{
+  background-color: $blue30;
+  .btn-active{
+    background-color: $blue80;
+    margin-left: 8px;
+  }
+  .snack-icon {
+    &::before{
+      font-family: 'Material Icons';
+      content: "info";
+      font-size: 24px;
+    }
+  }
+
+}

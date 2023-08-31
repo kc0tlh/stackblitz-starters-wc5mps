@@ -1,0 +1,85 @@
+$font-weights: (
+    "regular": 400,
+    "medium": 600,
+    "bold": 700
+);
+
+$font-sizes: (
+    "nano": 10.5px,  
+    "micro":12px,  
+    "small" : 14px,
+    "regular": 16px,
+    "medium": 16px, //the app should be of 18px. temporary it has set to 16px
+    "large": 24px,
+    "x-large":32px
+);
+
+$line-heights: (
+    "micro": 16px,
+    "mini":20px,
+    "small" : 22px,
+    "regular": 24px,
+    "medium": 32px,
+    "large": 44px
+);
+
+.h2{
+    font-size: map-get($font-sizes, x-large );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, large );
+}
+.h3{
+    font-size: map-get($font-sizes, large );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, medium );
+}
+.h4{
+    font-size: map-get($font-sizes, medium );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, small );
+}
+.l1{
+    font-size: map-get($font-sizes, regular );
+    font-weight: map-get($font-weights, regular );
+    line-height: map-get($line-heights, regular );
+}
+.l2{
+    font-size: map-get($font-sizes, regular );
+    font-weight: map-get($font-weights, medium );
+    line-height: map-get($line-heights, regular );
+}
+.l3{
+    font-size: map-get($font-sizes, regular );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, regular );
+}
+.s1{
+    font-size: map-get($font-sizes, small );
+    font-weight: map-get($font-weights, regular );
+    line-height: map-get($line-heights, mini );
+}
+.s2{
+    font-size: map-get($font-sizes, small );
+    font-weight: map-get($font-weights, medium );
+    line-height: map-get($line-heights, mini );
+}
+.s3{
+    font-size: map-get($font-sizes, small );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, mini );
+}
+.mini1{
+    font-size: map-get($font-sizes, micro );
+    font-weight: map-get($font-weights, regular );
+    line-height: map-get($line-heights, micro );
+}
+.mini3{
+    font-size: map-get($font-sizes, micro );
+    font-weight: map-get($font-weights, bold );
+    line-height: map-get($line-heights, micro );
+}
+.micro1{
+    font-size: map-get($font-sizes, nano );
+    font-weight: map-get($font-weights, regular );
+    line-height: map-get($line-heights, mini );
+}

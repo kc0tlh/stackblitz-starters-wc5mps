@@ -1,0 +1,48 @@
+@import '../../../../theme/styles/layout';
+.flex-title {
+  display: flex;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin-between {
+  margin-right: 16px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border: none;
+  cursor: pointer;
+  border-radius: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 48px;
+  width: 131px;
+}
+
+.title {
+  justify-content: space-between;
+}
+
+.clear {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-text {
+  width: 620px;
+}
+@media screen and (max-width: $mobile_max_width) {
+  .modal-text {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: $tab_min_width) and (max-width: $tab_max_width) {
+  .modal-text {
+    width: 400px;
+  }
+}

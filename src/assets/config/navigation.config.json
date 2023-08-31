@@ -1,0 +1,33 @@
+{
+  "LOGIN": {
+    "id": "LOGIN_NEW",
+    "title": "",
+    "hide": false,
+    "restrictKey": "navibar_contact_us",
+    "url": "/login",
+    "target": "PAGE"
+  },
+  "CUSTOMER_FEEDBACK": {
+    "id": "CUSTOMER_FEEDBACK",
+    "title": "Customer Feedback",
+    "hide": false,
+    "url": "/customer-feedback",
+    "target": "PAGE",
+    "clevertapEvent": "click_customer_feedback"
+  },
+  "FEEDBACK_OVERVIEW": {
+    "id": "FEEDBACK_OVERVIEW",
+    "title": "Overview",
+    "hide": false,
+    "url": "/feedback-overview",
+    "target": "PAGE"
+  },
+  "MENU_ITEMS": {
+    "id": "MENU_ITEMS",
+    "title": "Menu Items",
+    "hide": false,
+    "url": "/menu-items",
+    "target": "PAGE",
+    "clevertapEvent": "click_feedback_menu_items"
+  }
+}

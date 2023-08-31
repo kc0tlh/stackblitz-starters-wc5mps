@@ -1,0 +1,69 @@
+<!-- top nav bar -->
+<div class="app-header">
+  <nav id="main-nav">
+    <div class="container m-t-24">
+      <div class="flex-row">
+        <div class="res-menu m-r-16" (click)="onMenuListView()">
+          <mat-icon>menu</mat-icon>
+        </div>
+<!--        <div class="pickme-logo" (click)="onHomeLogoClick()">-->
+<!--          <img src="{{CONST.ICONS.ICON_LOGO}}" alt="logo" class="logo m-b-24 logo-margin-r">-->
+<!--        </div>-->
+      </div>
+      <div class="menu-items flex-row s3 m-t-32 menu-color m-b-24 ">
+        <ng-container *ngFor="let mainMenu of mainMenus">
+          <div *ngIf="!mainMenu?.hide" class="m-r-30 item "
+            [ngClass]="activeMenu && mainMenu && activeMenu.id === mainMenu.id ? 'selected-menu ' : ''" (click)="onMenuClick(mainMenu)">
+            {{mainMenu?.title}}</div>
+        </ng-container>
+      </div>
+      <div class="date-time-menu">
+        <div class="date-time s1">
+          <div class="icons m-t-10">
+            <ng-container *ngFor="let iconMenu of iconMenus">
+              <div *ngIf="!iconMenu?.hide" class="app-header-icon" (click)="onMenuClick(iconMenu)">
+                <img [src]="iconMenu?.icon" alt="{{iconMenu?.icon}}">
+              </div>
+            </ng-container>
+            <div class="app-header-icon" [matMenuTriggerFor]="menu">
+              <img src="{{CONST.ICONS.ICON_MOREVERTICLE}}">
+            </div>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item (click)="onMore('CONTACT_US')">Contact Us</button>
+              <button mat-menu-item (click)="onMore('LOGOUT')">Logout</button>
+            </mat-menu>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-text-color updated">
+      Last Updated: {{lastUpdateTime}}
+    </div>
+    <hr>
+    <div *ngIf="innerWidth > 480 && activeMenu?.subItems && activeMenu?.subItems?.length"
+      class="sub-container container-color">
+      <div class="sub-menu-items h4 p-t-16 p-b-16 menu-color ">
+        <div *ngFor="let subMenu of activeMenu?.subItems">
+          <div class="m-r-24 item" *ngIf="!subMenu?.hide"
+            [ngClass]="activeSubMenuId === subMenu?.id ? 'selected-menu ' : ''" (click)="onSubMenuClick(subMenu)">
+            {{subMenu?.title}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="innerWidth <= 480">
+      <mat-expansion-panel *ngIf="activeMenu && activeMenu.subItems.length > 0">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="h4">
+            {{activeSubMenuName}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngFor="let subMenu of activeMenu?.subItems">
+          <mat-list *ngIf="activeSubMenuId!==subMenu?.id">
+            <mat-list-item role="button" (click)="onSubMenuClick(subMenu)">{{subMenu?.title}}</mat-list-item>
+          </mat-list>
+        </div>
+      </mat-expansion-panel>
+    </div>
+  </nav>
+</div>

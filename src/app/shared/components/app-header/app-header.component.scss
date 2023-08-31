@@ -1,0 +1,140 @@
+@import 'src/theme/styles/colors';
+
+.logo {
+  height: 50px;
+  width: 155px;
+  cursor: pointer;
+}
+#main-nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 2;
+}
+.menu-items .item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.selected-menu {
+  text-decoration: underline !important;
+}
+
+.sub-menu-items {
+  display: flex;
+  flex-direction: row;
+}
+.updated{
+  text-align: end;
+}
+
+.sub-menu-items .item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-items .item:hover,
+.sub-menu-items .item:hover {
+  text-decoration: underline;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end
+}
+
+.icons .app-header-icon {
+  cursor: pointer;
+}
+hr{
+  background-color: $black20;
+  border: none;
+  height: 1px;
+  margin-bottom: 0.5px;
+}
+.mat-expansion-panel {
+  background: $black20;
+}
+
+//mobile responsive
+@media screen and (max-width: 375px) {
+  .menu-items{
+    display: none;
+  }
+  .date-time-menu{
+    margin-right: 16px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+  }
+  .updated{
+    margin-right: 16px;
+    margin-top: -16px;
+  }
+  .sub-menu-items{
+    margin-left: 16px;
+  }
+  .icons .app-header-icon {
+    margin-right: 2px;
+  }
+}
+
+// Tablet
+@media screen and (min-width:376px) and (max-width:768px){
+  .menu-items{
+    display: none;
+  }
+  .date-time-menu{
+    margin-right: 24px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32px;
+  }
+  .updated{
+    margin-right: 32px;
+    margin-top: -20px;
+  }
+  .app-header-icon{
+    margin-left: 10px;
+  }
+  .sub-menu-items{
+    margin-left: 32px;
+  }
+}
+
+// desktop
+@media screen and (min-width:769px){
+  .container {
+    display: grid;
+    grid-template-columns: min-content auto auto;
+    margin-left: 80px;
+  }
+  .date-time-menu{
+    margin-right: 80px;
+  }
+  .res-menu{
+    display: none;
+  }
+  .updated{
+    margin-right: 80px;
+    margin-top: -20px;
+  }
+  .app-header-icon{
+    margin-left: 10px;
+  }
+  .sub-menu-items{
+    margin-left: 80px;
+  }
+}

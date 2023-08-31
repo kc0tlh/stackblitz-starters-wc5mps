@@ -1,0 +1,10 @@
+{
+  "ADMIN": {
+    "menus":["TEST", "PRO_TEST"]
+  },
+  "MERCHANT": {
+    "menus":[
+      "FEEDBACK"
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "commons": {
+    "paginationPageSize": 10,
+    "paginationPageSizeOptions": [
+      5,
+      10,
+      25,
+      100
+    ],
+    "cleverTap": true
+  },
+  "promotions": {
+    "minSpendAmount": 100,
+    "amountMultiplier": 50,
+    "promotionDayPeriod": 29
+  },
+  "cohort": {
+    "cohortMinNumberOfCount": 5,
+    "cohortMaxNumberOfCount": 20,
+    "statusCheckDelayMilliseconds": 5000,
+    "showCategorySection": false
+  },
+  "orderDetail": {
+    "idleTime": 300000,
+    "refreshTime": 20000
+  },
+  "skuManagement": {
+    "imageSize": 150000,
+    "descriptionLength": 280,
+    "coverImageDimensions": {
+      "height": 400,
+      "width": 400
+    },
+    "bannerImageDimensions": {
+      "height": 300,
+      "width": 600
+    }
+  },
+  "feedbackDiscount": {
+    "discountIncrement": 50,
+    "minFeedbackDiscount": 100,
+    "maxFeedbackDiscount": 10000,
+    "defaultCurrency": "LKR",
+    "showFeedbackDetails": true,
+    "showOrderDetails": true
+  },
+  "skuItemDiscount": {
+    "type": 1,
+    "value": 0,
+    "start_date": "",
+    "end_date": "",
+    "applicable_start_time": "12:00 AM",
+    "applicable_end_time": "11:30 PM",
+    "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ]
+  },
+  "skuItemOffer": {
+    "enable": false,
+    "typeId": 1,
+    "maxQty": 1,
+    "validity": {
+      "start": "",
+      "end": ""
+    }
+  },
+  "imageCrop": {
+    "croppedImagePreviewWidth": 800
+  },
+  "imageCompress": {
+    "imageCompressSize": 153600,
+    "imageCompressWidthHeightMax": 400,
+    "defaultWidthHeightRatio": 1,
+    "defaultQualityRatio": 0.7,
+    "defaultCoverImageRatio": 1,
+    "defaultThumbnailImageRatio": 2
+  },
+  "outletDetails": {
+    "imageSize": 150000,
+    "coverImageDimensions": {
+      "height": 300,
+      "width": 600
+    },
+    "outletImageDimensions": {
+      "height": 200,
+      "width": 200
+    },
+    "mapZoom": 16
+  },
+  "skuOverview": {
+    "defaultVisibleItems": 10,
+    "allowedSkuOptionLevel": 3
+  },
+  "menuItems": {
+    "showFeedbackDetails": false,
+    "showOrderDetails": true
+  },
+  "serviceQuality": {
+    "pieChartColors": {
+      "rejected orders" : "#F8463A",
+      "missed orders": "#BDBDBD",
+      "inaccurate orders": "#FDD834",
+      "successfully completed orders": "#50B774",
+      "item unavailable": "#FDD834",
+      "outlet busy": "#7384C8",
+      "insufficient supply": "#F25653"
+    }
+  },
+  "specialProperties": {
+    "id": 11,
+    "name": "Special Properties and Ingredients"
+  }
+
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap');
+
+@import 'theme/today-rates';
+
+@import 'src/theme/styles/colors';
+@import 'src/theme/styles/inputs';
+@import 'src/theme/styles/layout';
+@import 'src/theme/styles/typography';
+@import 'src/theme/styles/ripple-effect';
+
+@import 'src/theme/components/snackbar';
+@import 'src/theme/components/tables';
+@import 'src/theme/components/buttons';
+@import 'src/theme/components/checkboxes';
+@import 'src/theme/components/spinner';
+@import 'src/theme/components/ngx-datepicker';
+@import 'src/theme/components/right-sheet';
+@import 'src/theme/components/responsive-styles';
+
+html, body {
+  height: 100%;
+  .contact-us{
+    overflow: hidden;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif !important
+}
+.mat-button-focus-overlay {
+  background-color: transparent !important;
+}
+
+// datepicker component styles
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  border-radius: 12px !important;
+  border: 1px solid $black30;
+}
+
+.mat-form-field-underline.ng-tns-c35-0.ng-star-inserted,
+.mat-form-field-underline.ng-tns-c35-1.ng-star-inserted {
+  display: none;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background: $black5;
+}
+
+.finance-report-container .mat-form-field-underline {
+  display: none !important;
+}
+
+.hidden {
+  height: 0;
+  visibility: hidden;
+}

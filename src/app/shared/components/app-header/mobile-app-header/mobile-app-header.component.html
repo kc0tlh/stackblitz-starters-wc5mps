@@ -1,0 +1,31 @@
+<div class="rightsheet-container p-x-28">
+  <div class="flex-row title">
+    <div class="m-r-26" (click)="onClose()">
+      <mat-icon>clear</mat-icon>
+    </div>
+    <div>
+      <img class="logo-icon" src="{{CONST.ICONS.ICON_LOGO}}">
+    </div>
+  </div>
+  <div class="m-t-28 hr">
+    <hr>
+  </div>
+  <div class="m-t-24">
+    <ng-container *ngFor="let mainMenu of mainMenus">
+
+      <mat-expansion-panel [ngClass]="!mainMenu?.subItems || mainMenu.subItems.length === 0?'non-expandable-menu':''"
+                           [hideToggle]="!mainMenu?.subItems || mainMenu.subItems.length === 0" *ngIf="!mainMenu?.hide">
+        <mat-expansion-panel-header (click)="onMenuClick(mainMenu)">
+          <mat-panel-title class="l2">
+            {{mainMenu?.title}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+          <mat-list *ngFor="let subMenu of mainMenu?.subItems">
+            <mat-list-item role="button" (click)="onSubMenuClick(subMenu)">{{subMenu?.title}}</mat-list-item>
+          </mat-list>
+        </div>
+      </mat-expansion-panel>
+    </ng-container>
+  </div>
+</div>

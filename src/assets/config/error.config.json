@@ -1,0 +1,624 @@
+{
+  "get_dashboard_profile_details": {
+    "endpointId": "get_dashboard_profile_details",
+    "type": "error",
+    "title": "Error(s) Retrieving Profile Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+
+  "get_dashboard_order_summary": {
+    "endpointId": "get_dashboard_order_summary",
+    "type": "error",
+    "title": "Error(s) Retrieving Order Summary Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_dashboard_analytics_summary": {
+    "endpointId": "get_dashboard_analytics_summary",
+    "type": "error",
+    "title": "Error(s) Retrieving Analytics Summary Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+
+  "get_merchant_details": {
+    "endpointId": "get_outlet_details",
+    "type": "error",
+    "title": "Error(s) Retrieving Outlet Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_analytics": {
+    "endpointId": "get_analytics",
+    "type": "error",
+    "title": "Error(s) Retrieving Promotion Analytics",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_analytics_by_id": {
+    "endpointId": "get_analytics_by_id",
+    "type": "error",
+    "title": "Error(s) Retrieving Promotion Chart Data",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_promotion_list": {
+    "endpointId": "get_promotion_list",
+    "type": "error",
+    "title": "Error(s) Retrieving Promotion List Data",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_promotion": {
+    "endpointId": "update_promotion",
+    "type": "error",
+    "title": "Error(s) Updating the Promotion",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "cancel_promotion": {
+    "endpointId": "cancel_promotion",
+    "type": "error",
+    "title": "Error(s) Cancelling the Promotion",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "create_promotion": {
+    "endpointId": "create_promotion",
+    "type": "error",
+    "title": "Error(s) Creating a New Promotion",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_promotion_by_id": {
+    "endpointId": "get_promotion_by_id",
+    "type": "error",
+    "title": "Error(s) Retrieving Promotion Data",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_pending_orders": {
+    "endpointId": "get_pending_orders",
+    "type": "error",
+    "title": "Error(s) Retrieving Pending Orders",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_order_history": {
+    "endpointId": "get_order_history",
+    "type": "error",
+    "title": "Error(s) Retrieving Order History",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_pending_order_details": {
+    "endpointId": "get_pending_order_details",
+    "type": "error",
+    "title": "Error(s) Retrieving Pending Order Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_order_history_details": {
+    "endpointId": "get_order_history_details",
+    "type": "error",
+    "title": "Error(s) Retrieving Older Order Details ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_account_summary": {
+    "endpointId": "get_account_summary",
+    "type": "error",
+    "title": "Error(s) Retrieving Account Summary ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_transactions_list": {
+    "endpointId": "get_transactions_list",
+    "type": "error",
+    "title": "Error(s) Retrieving Transactions List ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_accounting_rules": {
+    "endpointId": "get_accounting_rules",
+    "type": "error",
+    "title": "Error(s) Retrieving Accounting Rules ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_sku_item_list": {
+    "endpointId": "get_sku_item_list",
+    "type": "error",
+    "title": "Error(s) Retrieving Items Data",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_sku_item_details": {
+    "endpointId": "get_sku_item_details",
+    "type": "error",
+    "title": "Error(s) Retrieving the Specific Item Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_item_categories": {
+    "endpointId": "get_item_categories",
+    "type": "error",
+    "title": "Error(s) Retrieving Item Categories",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_item_categories": {
+    "endpointId": "update_item_categories",
+    "type": "error",
+    "title": "Error(s) Updating Category",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_price_updates": {
+    "endpointId": "get_price_updates",
+    "type": "error",
+    "title": "Error(s) Retrieving Sku Price Update",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_price_update": {
+    "endpointId": "update_price_update",
+    "type": "error",
+    "title": "Error(s) Updating Sku Price Update",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "create_sku": {
+    "endpointId": "create_sku",
+    "type": "error",
+    "title": "Error(s) Creating Sku",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "set_item_availability": {
+    "endpointId": "set_item_availability",
+    "type": "error",
+    "title": "Error(s) Updating Item Availability",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "createSku": {
+    "endpointId": "create_sku",
+    "type": "error",
+    "title": "Error(s) Creating Item",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_sku": {
+    "endpointId": "update_sku",
+    "type": "error",
+    "title": "Error(s) Updating Item",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "deleteSku": {
+    "endpointId": "delete_sku",
+    "type": "error",
+    "title": "Error(s) Deleting Item ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "sortSku": {
+    "endpointId": "sort_sku",
+    "type": "error",
+    "title": "Error(s) Sorting Item",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "create_feedback_discount": {
+    "endpointId": "create_feedback_discount",
+    "type": "error",
+    "title": "Error(s) Creating Customer Feedback Discount",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_feedback_discount": {
+    "endpointId": "get_feedback_discount",
+    "type": "error",
+    "title": "Error(s) Retrieving Customer Feedback Discount",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "put_feedback_discount": {
+    "endpointId": "put_feedback_discount",
+    "type": "error",
+    "title": "Error(s) Sending Customer Feedback Discount",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_customer_feedback": {
+    "endpointId": "get_customer_feedback",
+    "type": "error",
+    "title": "Error(s) Retrieving Customer Feedback",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "post_merchant_email": {
+    "endpointId": "post_merchant_email",
+    "type": "error",
+    "title": "Error(s) Sending the Reply",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "delete_sku": {
+    "endpointId": "delete_sku",
+    "type": "error",
+    "title": "Error(s) Sku Delete",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "sort_sku": {
+    "endpointId": "sort_sku",
+    "type": "error",
+    "title": "Error(s) Sku Sorting",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_sku_options_list": {
+    "endpointId": "get_sku_options_list",
+    "type": "error",
+    "title": "Error(s) Retrieving Sku Option List Details ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_sku_option_by_id": {
+    "endpointId": "get_sku_option_by_id",
+    "type": "error",
+    "title": "Error(s) Retrieving Sku Option Details ",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "delete_sku_option_by_id": {
+    "endpointId": "delete_sku_option_by_id",
+    "type": "error",
+    "title": "Error(s) Delete Sku Option",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "save_sku_option": {
+    "endpointId": "save_sku_option",
+    "type": "error",
+    "title": "Error(s) Save Sku Option",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "upload_image": {
+    "endpointId": "upload_image",
+    "type": "error",
+    "title": "Error(s) Uploading Image",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_tags": {
+    "endpointId": "get_tags",
+    "type": "error",
+    "title": "Error(s) Retrieving Tags",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_outlet_details": {
+    "endpointId": "get_outlet_details",
+    "type": "error",
+    "title": "Error(s) Retrieving Outlet Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_options_in_sku": {
+    "endpointId": "update_options_in_sku",
+    "type": "error",
+    "title": "Error(s) Save Options in Sku",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "update_skus_in_option": {
+    "endpointId": "update_skus_in_option",
+    "type": "error",
+    "title": "Error(s) Save Skus in Options",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_item_rankings": {
+    "endpointId": "get_item_rankings",
+    "type": "error",
+    "title": "Error(s) Retrieving Item Rankings",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_item_comments": {
+    "endpointId": "get_item_comments",
+    "type": "error",
+    "title": "Error(s) Retrieving Item Comments",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_selected_comment": {
+    "endpointId": "get_selected_comment",
+    "type": "error",
+    "title": "Error(s) Retrieving Comment Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_feedback_overview": {
+    "endpointId": "get_feedback_overview",
+    "type": "error",
+    "title": "Error(s) Retrieving Feedback Overview",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_selected_ranking": {
+    "endpointId": "get_selected_ranking",
+    "type": "error",
+    "title": "Error(s) Retrieving Ranking Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_service_quality_outlet_availability": {
+    "endpointId": "get_service_quality_outlet_availability",
+    "type": "error",
+    "title": "Error(s) Retrieving SQ Outlet Availability Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_service_quality_order_completion": {
+    "endpointId": "get_service_quality_order_completion",
+    "type": "error",
+    "title": "Error(s) Retrieving SQ Order Completion Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_service_quality_over_view": {
+    "endpointId": "get_service_quality_over_view",
+    "type": "error",
+    "title": "Error(s) Retrieving SQ Over View Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_service_quality_rider_friendly": {
+    "endpointId": "get_service_quality_rider_friendly",
+    "type": "error",
+    "title": "Error(s) Retrieving SQ Rider Friendly Details",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "uploadImage": {
+    "endpointId": "upload_image",
+    "type": "error",
+    "title": "Error(s) Uploading Image",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_sku_discount_list": {
+    "endpointId": "get_sku_discount_list",
+    "type": "error",
+    "title": "Error(s) Getting Discounts",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "delete_sku_discount": {
+    "endpointId": "delete_sku_discount",
+    "type": "error",
+    "title": "Error(s) Deleting Discount",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "create_sku_bulk_discount": {
+    "endpointId": "create_sku_bulk_discount",
+    "type": "error",
+    "title": "Error(s) Creating Sku Bulk Discount",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_contact_info": {
+    "endpointId": "get_contact_info",
+    "type": "error",
+    "title": "Error(s) Retrieving Contact Information",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "create_new_cohort": {
+    "endpointId": "create_new_cohort",
+    "type": "error",
+    "title": "Error(s) Creating New Cohort",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  },
+  "get_cohort_status": {
+    "endpointId": "get_cohort_status",
+    "type": "error",
+    "title": "Error(s) Retrieving Cohort Status",
+    "showApiError": true,
+    "httpCodes": {
+      "404": "Requested URL was not found"
+    },
+    "dismissDuration": -1
+  }
+}

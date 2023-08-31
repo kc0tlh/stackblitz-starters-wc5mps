@@ -1,0 +1,97 @@
+@import '../styles/colors';
+
+.datepicker-container {
+  .bs-datepicker-container .bs-datepicker-head {
+    background-color: $white;
+  }
+
+  body .bs-datepicker-container .bs-datepicker-head * {
+    color: $black70;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bs-datepicker-body table th {
+    color: $black70;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  body .bs-datepicker-container .bs-datepicker-head * {
+    color: $black70;
+  }
+
+  .in-range.ng-star-inserted,
+  .ng-star-inserted {
+    color: $black90;
+    font-size: 13px;
+  }
+
+  .is-other-month.ng-star-inserted {
+    color: $black40;
+  }
+
+  .select-start.selected.ng-star-inserted,
+  .in-range.select-end.selected.ng-star-inserted,
+  .is-highlighted.ng-star-inserted {
+    background-color: $yellow80 !important;
+  }
+
+  .week.ng-star-inserted {
+    visibility: hidden;
+  }
+
+  .bs-datepicker-body {
+    margin-left: -28px;
+    border: none;
+    min-height: 0px;
+  }
+
+  .is-other-month.ng-star-inserted {
+    display: none;
+  }
+
+  .bs-datepicker {
+    box-shadow: none;
+    border: 1px solid $black20;
+    border-radius: 8px;
+  }
+
+  .bs-datepicker-container {
+    padding: 2px;
+  }
+
+  .ui-datepicker-current-day .ui-state-active {
+    background: $black;
+  }
+
+  .bs-datepicker-body table.days span.active:not(.select-start):before, .bs-datepicker-body table.days span.in-range:not(.select-start):before, .bs-datepicker-body table.days td.active:not(.select-start):before, .bs-datepicker-body table.days td.in-range:not(.select-start):before {
+    background: $yellow20;
+    height: 22px;
+  }
+
+  .select-start.selected.ng-star-inserted,
+  .select-end.selected.ng-star-inserted {
+    height: 30px;
+  }
+
+  .mat-form-field-underline {
+    display: none !important;
+  }
+
+  .bs-datepicker-head button {
+    color: $black70;
+  }
+
+  .bs-datepicker-head button.current {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .theme-green .bs-datepicker-body table td span.selected, .theme-green .bs-datepicker-body table td.selected span, .theme-green .bs-datepicker-body table td span[class*=select-]:after, .theme-green .bs-datepicker-body table td[class*=select-] span:after {
+  background-color: $yellow80 !important;
+  }
+  .bs-datepicker-body table td.is-highlighted:not(.disabled):not(.selected) span, .bs-datepicker-body table td span.is-highlighted:not(.disabled):not(.selected){
+    background-color: $yellow80 !important;
+  }
+}
+

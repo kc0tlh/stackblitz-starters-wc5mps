@@ -1,0 +1,19 @@
+@import '../../../../theme/styles/layout';
+.btn-secondary {
+  border-radius: 18px;
+  height: 48px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.btn-row{
+    text-align: right;
+}
+.error-text{
+  width: 400px;
+}
+@media screen and (max-width: $mobile_max_width) {
+  .error-text{
+    width: 300px;
+  }
+}
